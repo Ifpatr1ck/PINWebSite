@@ -22,20 +22,7 @@
             <input class="name" type="text" name="name5" placeholder="Введите ваш факультет" onchange='eventForm(this.value)'>
             <p class="question">Группа</p>
             <input class="name" type="text" name="name6" placeholder="Введите вашу группу    " onchange='eventForm(this.value)'>
-            <button onClick="submit()" class="buttonstyle">Сохранить данные</button>
-            <script type="text/javascript">
-                function submit() {
-                    var list = [];
-                    for (let i = 0; i < 6; i++) {
-                        var a = document.getElementById(i);
-                        var b = a.value;
-                        list.push(b);
-                        a.value = "";
-                    }
-                    var json = JSON.stringify(list);
-                    console.log(json);
-                }
-            </script>
+            <button class="buttonstyle">Сохранить данные</button>
         </form>
     </body>
 </body>
